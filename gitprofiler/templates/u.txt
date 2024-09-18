@@ -1,0 +1,33 @@
+<!-- {% extends "index.html" %}
+{% block title %} {{ user.login }}'s Profile {% endblock %}
+{% block content %}
+<h2>{{ user.login }}'s Profile</h2>
+nooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+    <img src="{{ user.avatar_url }}" alt="{{ user.login }}'s avatar" width="100">
+    <p><strong>Name:</strong> {{ user.name }}</p>
+    <p><strong>Bio:</strong> {{ user.bio }}</p>
+    <p><strong>Followers:</strong> {{ user.followers }}</p>
+    <p><strong>Following:</strong> {{ user.following }}</p>
+    <p><strong>Public Repos:</strong> {{ user.public_repos }}</p>
+    <p><strong>Profile URL:</strong> <a href="{{ user.html_url }}">{{ user.html_url }}</a></p>
+
+{% endblock %} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ user.login }}'s Profile</title>
+</head>
+<body>
+    <h2>{{ user.login }}'s Profile</h2>
+    <img src="{{ user.avatar_url }}" alt="{{ user.login }}'s avatar" width="100">
+    <p><strong>Name:</strong> {{ user.name }}</p>
+    <p><strong>Bio:</strong> {{ user.bio }}</p>
+    <p><strong>Followers:</strong> {{ user.followers }}</p>
+    <p><strong>Following:</strong> {{ user.following }}</p>
+    <p><strong>Public Repos:</strong> {{ user.public_repos }}</p>
+    <p><strong>Profile URL:</strong> <a href="{{ user.html_url }}">{{ user.html_url }}</a></p>
+</body>
+</html>
